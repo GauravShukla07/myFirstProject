@@ -9,6 +9,19 @@ body {
     background-color:ghostwhite;
 }
 
+nav {
+    height: 10vh;
+}
+
 #totPage {
     padding-left: 7px;
+}
+
+#main {
+    height: 90vh;
+    overflow: scroll;
+}
+
+#main::-webkit-scrollbar {
+    display: none;
 }

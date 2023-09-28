@@ -30,7 +30,6 @@ body.dark {
 /* navbar stykes start */
 
 nav {
-    position: fixed;
     height: 7vh;
     min-height: 70px;
     max-height: 160px;
@@ -80,12 +79,12 @@ nav>div {
 
 .brand>a:active {
     color: var(--main-primary1-color);
-    fill: var(--main-primary1-color);
+    /* fill: var(--main-primary1-color); */
 }
 
 .dark .brand>a:active {
     color: var(--dark-primary1-color);
-    fill: var(--dark-primary1-color);
+    /* fill: var(--dark-primary1-color); */
 }
 
 .grpBtn {
@@ -93,40 +92,42 @@ nav>div {
     justify-content: center;
 }
 
-.grpBtn>button {
+button {
     background-color: white;
     color: black;
     cursor: pointer;
     padding: 3px 7px;
     border: 3px solid rgba(0, 0, 0, 0.30);
-    border-left: none;
-    border-right: none;
 }
-.grpBtn>button:hover {
+.dark button {
+    background-color: black;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+button:hover {
     background-color: rgb(200, 200, 200);
     color: white;
 }
-.dark .grpBtn>button:hover {
+.dark button:hover {
     background-color: rgb(91, 91, 91);
     color: black;
 }
-.grpBtn>button:active {
+button:active {
     background-color: rgb(200, 200, 200, 0.5);
 }
-.dark .grpBtn>button:active {
+.dark button:active {
     background-color: rgb(91, 91, 91, 0.5);
+}
+
+.grpBtn>button {
+    border-left: none;
+    border-right: none;
 }
 
 .grpBtn>button:first-child {
     border-left: 3px solid rgb(0, 0, 0, 0.3);
     border-top-left-radius: 40%;
     border-bottom-left-radius: 40%;
-}
-
-.dark .grpBtn>button {
-    background-color: black;
-    border-color: rgb(255, 255, 255, 0.5);
-    color: white;
 }
 
 .grpBtn>button:last-child {
@@ -178,15 +179,44 @@ nav>div {
 
 /* navbar styles end */
 
-#totPage {
-    padding-left: 7px;
-}
-
 #main {
     height: 90vh;
+    width: 100vw;
     overflow: scroll;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main>footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+#content {
+    padding: 1%;
 }
 
 #main::-webkit-scrollbar {
     display: none;
+}
+
+#pageControl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pageControl>* {
+    margin: 5px;
+}
+
+#pageControl>button {
+    border-radius: 20%;
+}
+
+#totPage {
+    padding-left: 7px;
 }

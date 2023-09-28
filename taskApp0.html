@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Mooli">
     <link rel="stylesheet" href="taskApp0.css">
 </head>
-<body class="dar">
+<body class="dark">
     <nav>
         <div>
             <div class="brand">
@@ -42,23 +42,23 @@
             </div>
         </div>
     </nav>
-    <section class="container-fluid d-flex flex-column align-content-center justify-content-between" id="main">
-        <div id="content" class="container-fluid flex-grow-1 d-flex justify-content-around">
+    <section id="main">
+        <div id="content">
             
         </div>
-        <footer class="p-3">
-            <form action="" class="container d-flex justify-content-center">
-                <button id="prvPage" type="button" class="btn btn-secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+        <footer >
+            <form action="" id="pageControl">
+                <button id="prvPage" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
                         <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"></path>
                     </svg>
                 </button>
-                <div class="input-group w-auto">
-                    <input id="pageInput" name="page" value="1" type="number" class="form-control" min="1" max="7"> 
-                    <label for="pageInput" class="input-group-text"> / <span id="totPage">7</span></label>
+                <div id="pageShow">
+                    <input id="pageInput" name="page" value="1" type="number" min="1" max="7"> 
+                    <label for="pageInput" class=""> / <span id="totPage">7</span></label>
                 </div>
                 <button id="nxtPage" type="button" class="btn btn-secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                         <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
                     </svg>
                 </button>
